@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>my Contact</title>
+</head>
+<body>
+<h1>Contact ME</h1>
+
+<p> use this form to contact to babyduncan .. </p>
+
+<form action="http://www.baidu.com/s" method="post" name="frmLogin">
+    <fieldset>
+        <legend><em>Contact Information</em></legend>
+        <table>
+            <tr>
+                <td><label for="email">your email</label></td>
+                <td>
+                    <input placeholder="输入你的邮箱" name="email" height="1" width="30" maxlength="50" id="email" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>your content</td>
+                <td>
+                    <textarea id="emailContent" name="emailContent" rows="10" cols="50" placeholder="输入你的留言" accesskey="c"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>where did you heard me</td>
+                <td>
+                    <select id="heardFrom" name="heardFrom">
+                        <option value="internet">internet</option>
+                        <option value="friends">friends</option>
+                        <option value="tv">tv</option>
+                        <option value="others">others</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>may i reply you any time ?</td>
+                <td><input id="replyAnyTimeYes" type="radio" name="replyAnyTime" value="yes">YES<br>
+                    <input id="replyAnyTimeNo" type="radio" name="replyAnyTime" value="no">NO
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <input type="submit" value="Send message">
+
+</form>
+</body>
+</html>
