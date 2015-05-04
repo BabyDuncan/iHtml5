@@ -1,0 +1,47 @@
+/* 第七章第一个例子的样式 */
+
+body {
+    color: #000;
+    background-color: azure;
+    font-family: 宋体, 微软雅黑, monospace;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 30px;
+}
+
+table {
+    border: solid;
+    font-size: 20px;
+    background-color: beige;
+    border-width: 1px;
+}
+
+th {
+    background-color: burlywood;
+    padding: 20px;
+}
+
+td.desc {
+    font-size: 10px;
+}
+
+p.sans-serif {
+    font-family: sans-serif;
+}
+
+p.serif {
+    font-family: serif;
+}
+
+p.monospace {
+    font-family: monospace;
+}
+
+p.cursive {
+    font-family: cursive;
+}
