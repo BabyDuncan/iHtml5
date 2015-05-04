@@ -1,0 +1,28 @@
+p.testColor {
+    color: cornflowerblue;
+}
+
+p.testAlignRight {
+    text-align: right;
+}
+
+p.testAlignLeft {
+    text-align: left;
+}
+
+p.testAlignCenter {
+    text-align: center;
+}
+
+p.justified {
+    text-align: justify;
+}
+
+h1 {
+    text-shadow: cornflowerblue 10px 10px 3px;
+}
+
+h1:first-letter {
+    font-size: 100px;
+    font-weight: bold;
+}
