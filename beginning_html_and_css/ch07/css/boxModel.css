@@ -1,0 +1,8 @@
+body, h1, p, img, b {
+    border: solid;
+    border-color: #666666;
+    border-bottom-color: #3399cc;
+    border-width: 1px;
+    padding: 3px;
+
+}
