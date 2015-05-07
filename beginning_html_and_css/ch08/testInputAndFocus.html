@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>测试一下:input 和 :focus</title>
+    <style>
+        @import "css/importme.css";
+
+        body {
+            background-color: bisque;
+        }
+
+        input {
+            background-color: #e9e9e9;
+        }
+
+        input:focus {
+            background-color: aquamarine;
+        }
+
+        p:after {
+            content: "我是尾巴";
+            color: aquamarine;
+        }
+
+        span {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<input value="123" maxlength="30" placeholder="请输入点文字">
+
+<p>我是头</p>
+
+<span>我要隐身</span>
+</body>
+</html>

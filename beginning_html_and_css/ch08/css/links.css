@@ -1,3 +1,5 @@
+@import "importme.css";
+
 body {
     background-color: #ffffff;
     background-image: url("../rabbit.jpg");
