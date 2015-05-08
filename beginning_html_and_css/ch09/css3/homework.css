@@ -1,0 +1,36 @@
+body {
+    font-family: 微软雅黑;
+    font-size: 2em;
+}
+
+h1 {
+    position: relative;
+    left: 100px;
+}
+
+#shudai {
+    height: 1000px;
+    width: 100px;
+    max-height: 1000px;
+    max-width: 100px;
+    background-color: #006699;
+    position: relative;
+    left: 200px;
+    top: -200px;
+    z-index: -1;
+}
+
+#content {
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    border: thin;
+    border-color: greenyellow;
+    background-color: hsla(100, 50%, 50%, .3);
+    width: 800px;
+    height: 500px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+
+}
