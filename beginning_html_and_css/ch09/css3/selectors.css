@@ -1,0 +1,38 @@
+/*  css3 选择器 */
+
+a[href$="org/"] {
+    color: gold;
+}
+
+a[href^="https"] {
+    color: green;
+}
+
+input:disabled {
+    border: dotted;
+    border-color: blueviolet;
+}
+
+p:nth-child(2) {
+    font-size: 2em;
+}
+
+p:first-child {
+    font-size: 125%;
+}
+
+p:nth-child(3) {
+    color: #006699;
+}
+
+div:empty {
+    height: 100px;
+    width: 200px;
+    background: #666666;
+}
+
+div ~ p {
+    font-size: 200%;
+    color: #666666;
+    font-family: consolas, courier, "courier new", monospace;
+}
