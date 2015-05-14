@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>问候</title>
+</head>
+<body>
+<button id="hello" value="点哥!!">点我</button>
+
+<script>
+
+    greet = function g() {
+        date = new Date();
+        hour = date.getHours();
+        console.log(hour);
+        switch (hour > 12) {
+            case true:
+                alert("hello 下午");
+                break;
+            case false:
+                alert("hello 上午");
+                break;
+            default :
+                alert("几点了");
+        }
+    };
+
+    document.getElementById("hello").onclick = greet;
+
+
+</script>
+</body>
+</html>
