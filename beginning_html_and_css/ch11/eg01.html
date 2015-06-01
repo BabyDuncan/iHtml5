@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>learn jquery</title>
+</head>
+<style type="text/css">
+    .select {
+        background-color: bisque;
+    }
+</style>
+<body>
+
+<div id="container"></div>
+
+<script src="./jquery-1.11.3.min.js"></script>
+<script>
+    $(document).ready(
+            function () {
+                var date = new Date();
+                console.log(date);
+                var time = date.getHours();
+                console.log("hours is " + time);
+                var temp;
+
+                if (time > 12) {
+                    temp = $("<h1>").text("hello afternoon").attr("id", "greeting").hide();
+                } else {
+                    temp = $("<h1>").text("hello morning").attr("id", "greeting").hide();
+                }
+
+                $("#container").append(temp);
+                $("#greeting").show("slow").css("color", "blue").addClass("select");
+            }
+    );
+</script>
+</body>
+</html>
