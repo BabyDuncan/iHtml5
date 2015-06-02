@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>learn jquery</title>
+</head>
+<style type="text/css">
+    #container1, #container2, #container3 {
+        background-color: bisque;
+        width: 100px;
+        height: 100px;
+        display: none;
+    }
+</style>
+<body>
+
+<div id="container1"></div>
+<hr>
+<button id="clickme">点击我</button>
+<button id="onclick__">点击可用</button>
+<button id="offclick__">点击不可用</button>
+
+<div id="container2"></div>
+<hr>
+<div id="container3"></div>
+
+<script src="./jquery-1.11.3.min.js"></script>
+<script>
+    $(document).ready(
+            function () {
+                $("#container1").slideDown("slow");
+                $("#container2").slideDown("fast");
+                $("#container3").slideDown(3000);
+
+                function ccc() {
+                    $("#container3").slideToggle(3000);
+                }
+
+                $("#clickme").on("click", ccc);
+
+                $("#onclick__").on("click", function () {
+                    $("#clickme").on("click", ccc);
+                });
+
+                $("#offclick__").on("dblclick", function () {
+                    $("#clickme").off("click", ccc);
+                });
+
+            }
+    );
+</script>
+</body>
+</html>
