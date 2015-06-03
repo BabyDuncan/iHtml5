@@ -5,6 +5,7 @@
     <title>测试ajax</title>
 </head>
 <body>
+<div id="container"></div>
 
 <script src="jquery-1.11.3.min.js"></script>
 <script>
@@ -17,6 +18,7 @@
                 console.log("data is " + data);
                 console.log("status is " + status);
                 console.log("jqxhr is " + jqxhr);
+                $("#container").html("<h1>" + data.code + data.msg + data.data + "</h1>");
             }
         });
     });
